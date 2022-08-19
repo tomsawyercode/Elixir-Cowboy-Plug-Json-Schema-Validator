@@ -3,7 +3,7 @@ defmodule ValidatorTest do
   use Plug.Test
   alias MyApp.Router
 
-  test "Book Schemma Validator Invalid" do
+  test "Test Invalid" do
     json = %{
       qty: "10",
       hardcover: 0,
@@ -20,7 +20,7 @@ defmodule ValidatorTest do
     assert conn.status == 422
   end
 
-  test "Book Schemma Validator Valid" do
+  test "Test Valid" do
     json = %{
       qty: 10,
       hardcover: true,
