@@ -1,4 +1,4 @@
-defmodule Plug.RouterValidatorSchemma do
+defmodule Plug.RouterValidatorSchema do
 
 
   @doc """
